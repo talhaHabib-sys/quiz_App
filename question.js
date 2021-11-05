@@ -1,5 +1,5 @@
 import React from 'react'
-function question({Hand,data:{question,correct_answer,answers}}){
+function question({Hand,han,showanswer,data:{question,correct_answer,answers}}){
 
     return(
         <>
@@ -9,13 +9,16 @@ function question({Hand,data:{question,correct_answer,answers}}){
 </div>
 <div className='button_class'>
   {answers.map((answer,idx)=>{
+    const sp=showanswer ? (answer===correct_answer ? "green":"red"):"";
     return (
-      <button className="normal_button" onClick={()=>{Hand(answers)}} dangerouslySetInnerHTML={{__html:answer}}/>
+      
+      <button className={`normal_button ${sp}`} onClick={()=>{Hand(answer)}} dangerouslySetInnerHTML={{__html:answer}}/>
     )
   })}
   
   
 </div>
+{showanswer && (<button onClick={han} className="next_button">Next Question</button>)}
         </>
     )
 }

@@ -38,3 +38,22 @@
   transform: scale(1.1);
   cursor: pointer;
 }
+.red{
+  color:red;
+}
+.green{
+color: green;
+}
+.next_button{
+  background-color: white;
+  width: 200px;
+  padding: 8px;
+  font-weight: bolder;
+  border-radius: 8px;
+}
+.next_button:hover{
+  background-color: transparent;
+  border:4px solid gray;
+  cursor: pointer;
+  transform: scale(1.1);
+}
