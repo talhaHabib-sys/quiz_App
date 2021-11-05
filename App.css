@@ -1,0 +1,40 @@
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  color: white;
+}
+.question{
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 16px;
+  margin: 10px auto;
+  min-width: 400px;
+  max-width: 900px;
+  color: #282c34;
+}
+.button_class{
+  column-count: 2;
+  padding: 20px 450px;
+}
+.normal_button{
+  background-color: white;
+  width: 350px;
+  height: 70px;
+  padding: 8px;
+  margin: 24px;
+  color: orange;
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  justify-content: center;
+}
+.normal_button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
